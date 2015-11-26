@@ -1,5 +1,4 @@
-jQuery( document ).ready( function () {
-
+var setParticles = function () {
 	particlesJS("particles-js", {
 		"particles": {
 			"number": {
@@ -110,9 +109,5 @@ jQuery( document ).ready( function () {
 		},
 		"retina_detect": true
 	});
-
 	jQuery( 'canvas.particles-js-canvas-el' ).css('position', 'absolute');
-
-	console.log("particles loaded");
-
-});
+}
