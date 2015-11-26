@@ -1,10 +1,7 @@
 
 jQuery( document ).ready( function () {
 
-	setTimeout(setParticles, 500);
-	// setParticles();
-
-	
+	setParticles();
 
 	console.log("particles loaded");
 

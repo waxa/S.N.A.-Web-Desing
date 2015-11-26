@@ -10,6 +10,7 @@ var setParticles = function () {
 			},
 			"color": {
 				"value": "#95a5a6"
+				// "value": "#ffffff"
 			},
 			"shape": {
 				"type": "circle",
@@ -27,7 +28,8 @@ var setParticles = function () {
 				}
 			},
 			"opacity": {
-				"value": 0.5,
+				// "value": 0.5,
+				"value": 1,
 				"random": false,
 				"anim": {
 					"enable": false,
@@ -50,6 +52,7 @@ var setParticles = function () {
 				"enable": true,
 				"distance": 150,
 				"color": "#95a5a6",
+				// "color": "#ffffff",
 				"opacity": 0.4,
 				"width": 1
 			},
