@@ -66,4 +66,24 @@ nav {
 	font-size: 2em;
 }
 
+#dropdown-mobile {
+	position: fixed !important;
+	width: 90vw !important;
+	margin: 14vh 5vw 0 5vw;
+	top: 0 !important;
+	background-color: #673ab7;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);	
+}
 
+
+#dropdown-mobile > li {
+	padding-left: 5%;
+	width: 90vw;
+	border-bottom: 1px solid rgba(0,0,0,0.75);
+}
+
+#dropdown-mobile > li > * {
+	color: #ffffff;
+}
