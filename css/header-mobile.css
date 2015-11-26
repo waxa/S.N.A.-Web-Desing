@@ -13,6 +13,7 @@ nav {
 	height: 14vh;
 	position: fixed;
 	font-weight: bold;
+	min-height: 70px;
 }
 
 .on-scroll {
@@ -53,9 +54,9 @@ nav {
 }
 
 .logo-center-wrapper-mobile > img {
-	width: 80vw;
 	height: 40vh;
-	margin: 0vh 10vw 0vh 10vw;
+	margin: 0 auto;
+	max-width: 70vh;
 }
 
 .hipster-phrase-mobile > h4 {
