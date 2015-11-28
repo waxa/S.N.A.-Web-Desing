@@ -1,38 +1,112 @@
-#main-header {
+.row {
+	margin-bottom: 0;
+}
+
+#desktop-header, #mobile-header {
 	height: 100vh;
+	background-color: #673ab7;
 }
 
 nav {
 	z-index: 100;
-	height: 100%;
+	position: absolute;
 	background-color: #673ab7;
 }
 
-.inner-header {
-	height: 20vh;
-	font-weight: bold;
+#mobile-header nav {
+	min-height: 70px;
 }
 
-.logo-center-wrapper,
-.hipster-phrase {
-	height: 40vh;
+.inner-header {
+	min-height: 70px;
 	width: 100vw;
 }
 
+.inner-header,
 .hipster-phrase {
-	height: 30vh;
+	text-align: center;
 }
 
-.logo-center-wrapper > img {
+
+.hipster-phrase-wrapper {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 99;
+}
+
+.hipster-phrase-wrapper > .hipster-phrase {	
 	width: 50vw;
-	height: 40vh;
-	margin: 0vh 25vw 0vh 25vw;
-}
-
-.hipster-phrase > h4 {
-	width: 40vw;
-	margin: 0 30vw 10vh 30vw;
+	margin: 0 auto;
+	color: #ffffff;
+	text-align: center;
 	font-family: 'Roboto', serif;
 	font-weight: 100;
 	font-size: 3em;
+}
+
+#mobile-header .hipster-phrase-wrapper > .hipster-phrase {
+	width: 80vw;
+	font-size: 3em;
+}
+
+#mobile-header .inner-header > * {
+	position: absolute;
+}
+
+#mobile-header .inner-header > a.dropdown-button {
+	left: 0;
+	top: 0;
+	margin-left: 21px;
+	height: 28px;
+	width: 40px;
+	margin-top: 21px;
+	z-index: 102;
+}
+
+#mobile-header .inner-header > a.logo-mobile {
+	left: 0;
+	top: 0;
+	height: 56px;
+	width: 100%;
+	margin-top: 7px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2em;
+	z-index: 101;
+}
+
+#mobile-header .inner-header > a.dropdown-button > i {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#mobile-header ul#dropdown-mobile {
+	width: 90vw !important;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #673ab7;
+}
+
+#mobile-header ul#dropdown-mobile > li {
+	background-color: #673ab7;
+}
+
+#mobile-header ul#dropdown-mobile > li.divider {
+	height: 2px;
+	width: 80%;
+	background-color: #ffffff;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#mobile-header ul#dropdown-mobile > li > * {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #ffffff;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
 }

@@ -1,5 +1,5 @@
 var setHeader = function() {
-	var aux = jQuery( '.inner-header-mobile' ).height();
+	var aux = jQuery( '#mobile-header .inner-header' ).height();
 	
 	if ( aux <= 70 ) {
 		var aux = jQuery( '#dropdown-mobile' ).css('margin-top', '70px');
@@ -8,7 +8,11 @@ var setHeader = function() {
 
 jQuery( document ).ready( function () {
 
-	setParticles();
+	if ( jQuery( 'header#desktop-header' ).css( 'display' ) == 'none' ) {
+		setParticles('particles-mobile-js');
+	} else {
+		setParticles('particles-js');
+	}
 
 	setHeader();
 

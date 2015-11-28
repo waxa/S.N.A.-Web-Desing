@@ -1,5 +1,5 @@
-var setParticles = function () {
-	particlesJS("particles-js", {
+var setParticles = function ( idContainer ) {
+	particlesJS( idContainer, {
 		"particles": {
 			"number": {
 				"value": 80,
