@@ -35,9 +35,14 @@ nav {
 	z-index: 99;
 }
 
-.hipster-phrase-wrapper > .hipster-phrase {	
+.hipster-phrase-wrapper > div.valing {
+	width: 100vw;
+}
+
+.hipster-phrase-wrapper .hipster-phrase {	
 	width: 50vw;
 	margin: 0 auto;
+	margin-top: 10vh;
 	color: #ffffff;
 	text-align: center;
 	font-family: 'Roboto', serif;
@@ -45,7 +50,26 @@ nav {
 	font-size: 3em;
 }
 
-#mobile-header .hipster-phrase-wrapper > .hipster-phrase {
+.hipster-phrase-wrapper .demo-btn {
+	display: block;
+	height: 70px;
+	width: 
+	min-height: 60px;
+	margin: 0 auto;
+	margin-top: 10vh;
+	text-align: center;
+	border-radius: 15px;
+	border: 3px solid #ffffff;
+	background-color: transparent;
+}
+
+.hipster-phrase-wrapper .demo-btn > * {
+	color: #ffffff;
+	height: 100%;
+	width: 100%;
+}
+
+#mobile-header .hipster-phrase-wrapper .hipster-phrase {
 	width: 80vw;
 	font-size: 3em;
 }
